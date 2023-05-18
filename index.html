@@ -2,128 +2,532 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeffry's Personal Site</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat&family=Noto+Serif&display=swap"
-    rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Jeffry's Portfolio</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
 </head>
 
-<body>
-  <div class="intro">
-    <img src="images/cloud.png" class="top-cloud" alt="cloud-img">
-    <h1>I'm Jeff</h1>
-    <h2>Welcome to my site</h2>
-    <img src="images/cloud.png" class="bottom-cloud" alt="cloud-img">
-    <img src="images/mountain.png" class="mountain" alt="mountain-img">
-
-  </div>
-
-  <div class="middle-container">
-    <div class="profile">
-      <img class="profile-pic" src="images/jeffry.jpg" alt="jeffry profile picture">
-      <h2>Hello! 😀</h2>
-      <p>I am a motivated and passionate individual with a diverse skill set in <strong>Computer Programming.</strong> With a combination of formal education and self-taught learning, I have gained practical experience in various fields and a strong desire to continuously learn and grow. I am committed to using my skills and knowledge to solve real-world problems and make a positive impact.</p>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">My Portfolio</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#education">Education</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5" src="assets/img/avataaars.png" alt="..." />
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-0">My name is jeff</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">Programmer - Web Designer - Data Scientists</p>
+        </div>
+    </header>
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <span class="plus-text text-uppercase" style="font-size: 2rem; font-weight: 700;">Web development</span>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/webdev.png" alt="web development icon" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <span class="plus-text text-uppercase" style="font-size: 2rem; font-weight: 700;">Android Development</span>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/androiddev.png" alt="android development icon" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <span class="plus-text text-uppercase" style="font-size: 2rem; font-weight: 700;">Cybersecurity</span>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/security.png" alt="cybersecurity icon" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 4-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <span class="plus-text text-uppercase" style="font-size: 2rem; font-weight: 700;">Internet Of Things</span>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/iot.png" alt="iot icon" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 5-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <span class="plus-text text-uppercase" style="font-size: 2rem; font-weight: 700;">Data Science</span>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/dataScience.png" alt="data science icon" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Education Section-->
+    <section class="page-section portfolio" id="education">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Education</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <span class="plus-text text-uppercase" style="font-size: 3rem; font-weight: 700;">Master</span>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/master.png" alt="master icon" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <span class="plus-text text-uppercase" style="font-size: 3rem; font-weight: 700;">Bachelor</span>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/bachelor.png" alt="bachelor icon" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section-->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg ms-auto">
+                    <p class="text-center fs-4">I am a motivated and passionate individual with a diverse skill set in
+                        Computer Programming. With a combination of formal education and self-taught learning, I have
+                        gained practical experience in various fields and a strong desire to continuously learn and
+                        grow. I am committed to using my skills and knowledge to solve real-world problems and make a
+                        positive impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <!-- Contact Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Contact Section Form-->
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <form id="contactForm" action="mailto:cv@jeffryaf.com" method="post" enctype="text/plain">
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Enter your name..."
+                                data-sb-validations="required" name="Name" />
+                            <label for="name">Full name</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text"
+                                placeholder="Enter your message here..." style="height: 10rem"
+                                data-sb-validations="required" name="Message"></textarea>
+                            <label for="message">Message</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
+                            </div>
+                        </div>
+                        <!-- Submit Button-->
+                        <input class="btn btn-primary btn-xl" id="submitButton" type="submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0">
+                        Pasuruan, 67156
+                        <br />
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Around the Web</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.instagram.com/jeffyolo/"><i
+                            class="fab fa-fw fa-instagram"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/jeffryatf/"><i
+                            class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/jeffryatf/"><i
+                            class="fab fa-fw fa-facebook-f"></i></a>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">Quotes</h4>
+                    <p class="lead mb-0">
+                        "Hello, World!" - Unknown
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; Jeffry 2023</small></div>
+        <div class="container"><small>Cool icon by Freepik</small></div>
     </div>
-    <hr>
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <table cellspacing="10">
-        <tr>
-          <td><img class="skill-img" src="images/website.png" alt=""></td>
-          <td>
-            <h3><a href="https://en.wikipedia.org/wiki/Solution_stack#Full-stack_developer">Full Stack Development</a>
-            </h3>
-            <p>I learned Full Stack Development from an online bootcamp and used my skills to build this website.
-              During the
-              program, I gained a comprehensive understanding of both front-end and back-end development, including
-              HTML,
-              CSS, JavaScript, Node.js, and React.</p>
-          </td>
-        </tr>
-        <tr>
-          <td><img class="skill-img" src="images/smartphone.png" alt=""></td>
-          <td>
-            <h3><a href="https://en.wikipedia.org/wiki/Android_software_development">Android Development</a></h3>
-            <p>I am currently in the process of learning about Android Development and using APIs to build a recipe
-              finder
-              app. With a passion for cooking and technology, I decided to combine the two by building an app that
-              makes it
-              easier for users to discover and cook new recipes.</p>
-          </td>
-        </tr>
-        <tr>
-          <td><img class="skill-img" src="images/padlock.png" alt=""></td>
-          <td>
-            <h3><a href="https://en.wikipedia.org/wiki/Computer_security">Cybersecurity</a></h3>
-            <p>I have completed training in ISO 27001 and Cisco Cybersecurity Essentials to deepen my understanding of
-              information security and cybersecurity. </p>
-          </td>
-        </tr>
-        <tr>
-          <td><img class="skill-img" src="images/science.png" alt=""></td>
-          <td>
-            <h3><a href="https://en.wikipedia.org/wiki/Data_science">Data Science</a></h3>
-            <p>I have pursued my interest in data science through a combination of academic and self-taught learning.
-              I
-              completed a Master's program that provided me with a strong foundation in data analysis, statistics, and
-              machine learning.</p>
-          </td>
-        </tr>
-        <tr>
-          <td><img class="skill-img" src="images/printer.png" alt=""></td>
-          <td>
-            <h3><a href="https://en.wikipedia.org/wiki/Internet_of_things">IoT Devices</a></h3>
-            <p>During my Bachelor's program, I gained a strong foundation in IoT (Internet of Things) and embedded
-              systems.
-              I learned about the design and implementation of embedded systems, including hardware and software
-              integration, firmware development, and interfacing with sensors and actuators.</p>
-          </td>
-        </tr>
-      </table>
-      <hr>
-      <h2>Schools</h2>
-      <table cellspacing="10">
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Programme</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2020-2022</td>
-            <td>Bariwijaya University MCS</td>
-          </tr>
-          <tr>
-            <td>2016-2020</td>
-            <td>Bariwijaya University BCE</td>
-          </tr>
-        </tbody>
-        <tfoot>
-
-        </tfoot>
-      </table>
-      <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <p>If you are interested in collaborating with me on a project or have any questions, please feel free to get in touch.</p>
-        <a class="btn" href="https://www.instagram.com/jeffyolo/">Send message</a>
-      </div>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Web Development</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/webdev.png" alt="web development icon" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">I learned Full Stack Development from an online bootcamp and used my skills to build this website. During the program, I gained a comprehensive understanding of both front-end and back-end development, including HTML, CSS and JavaScript.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+    <!-- Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Android Development</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/androiddev.png" alt="android development icon" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">I am currently in the process of learning about Android Development and using APIs to build a recipe finder app. With a passion for cooking and technology, I decided to combine the two by building an app that makes it easier for users to discover and cook new recipes.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Cybersecurity</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/security.png" alt="cybersecurity icon" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">I have completed training in ISO 27001, Kali Linux and Cisco Cybersecurity Essentials to deepen my understanding of information security and cybersecurity.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 4-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Internet of Things</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/iot.png" alt="iot icon" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">During my Bachelor's program, I gained a strong foundation in IoT (Internet of Things) and embedded systems. I learned about the design and implementation of embedded systems, including hardware and software integration, firmware development, and interfacing with sensors and actuators.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 5-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Data Science</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/dataScience.png" alt="Data Science icon" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">I have pursued my interest in data science through a combination of academic and self-taught learning. I completed a Master's program that provided me with a strong foundation in data analysis, statistics, and machine learning.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 6-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Master</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/master.png"
+                                    alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">At Universitas Brawijaya, I completed my Master's program in Computer Science from 2020 to 2022, achieving a 3.85 GPA. I actively contributed to research in developing a portable system for measuring human activity using a microcontroller. Additionally, I gained hands-on experience in machine learning and developed an advanced power-saving method for the ATMega328P microcontroller. 
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 7-->
+    <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Bachelor</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/bachelor.png"
+                                    alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">At Universitas Brawijaya from 2016 to 2020, I earned a Bachelor's degree in Computer Engineering with a GPA of 3.38. I gained expertise in security systems and their practical application, developed an IoT device for environmental data monitoring, acquired hands-on database management experience, and became proficient in Linux and shell scripting. 
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
-<footer>
-  <div class="bottom-container">
-    <a class="footer-link" href="contactMe.html">Contact Me</a>
-    <a class="footer-link" href="https://www.linkedin.com/in/jeffryatf/">LinkedIn</a>
-    <a class="footer-link" href="https://www.instagram.com/jeffyolo/">Instagram</a>
-    <a class="footer-link" href="hobbies.html">My Hobbies</a>
-    <p class="footer-text">© Jeffry.</p>
-  </div>
-</footer>
+
 </html>
