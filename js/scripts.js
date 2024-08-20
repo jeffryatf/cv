@@ -56,7 +56,7 @@ window.addEventListener('DOMContentLoaded', event => {
 function sendWhatsAppMessage() {
     const name = document.getElementById('name').value;
     const message = document.getElementById('message').value;
-    const phoneNumber = '628151688114';
+    const phoneNumber = '62881080148114';
     const text = `From: *${name}*
 ${message}`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
