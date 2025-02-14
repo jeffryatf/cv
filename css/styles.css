@@ -489,13 +489,16 @@ h1 {
     50% { background-color: hsl(201, 76%, 40%); box-shadow: 0 0 10px hsl(201, 76%, 90%); }
     100% { background-color: hsl(201, 76%, 35%);; box-shadow: 0 0 3px hsl(201, 76%, 80%); }
   }
-  
+.photo_container{
+  display: flex;
+  flex-direction: column;
+  background-image: 
+  linear-gradient(to right, hsla(0, 100%, 99%, 0.1) 1px, transparent 1px),
+  linear-gradient(to bottom, hsla(0, 100%, 99%, 0.1) 1px, transparent 1px);
+  background-position: center;
+  background-size: 70px 70px; 
+}
   .photo_gallery {
-    background-image: 
-    linear-gradient(to right, hsla(0, 100%, 99%, 0.1) 1px, transparent 1px),
-    linear-gradient(to bottom, hsla(0, 100%, 99%, 0.1) 1px, transparent 1px);
-    background-position: center;
-    background-size: 70px 70px; 
     z-index: 4;
     display: flex;
     flex-wrap: wrap;
