@@ -1,64 +1,47 @@
-/*!
-* Start Bootstrap - Freelancer v7.0.7 (https://startbootstrap.com/theme/freelancer)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-freelancer/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
+(function () {
+  "use strict";
 
-window.addEventListener('DOMContentLoaded', event => {
+  var cards = document.querySelectorAll('.card'),
+      width = window.innerWidth,
+      height = window.innerHeight;
 
-    // Navbar shrink function
-    var navbarShrink = function () {
-        const navbarCollapsible = document.body.querySelector('#mainNav');
-        if (!navbarCollapsible) {
-            return;
-        }
-        if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove('navbar-shrink')
-        } else {
-            navbarCollapsible.classList.add('navbar-shrink')
-        }
+  function init() {
+      bindMouse();
 
-    };
+      cards.forEach(card => {
+          light(card, 350, -125);
+          tilt(card, 350, -125);
+      });
+  }
 
-    // Shrink the navbar 
-    navbarShrink();
+  function bindMouse() {
+      document.addEventListener('mousemove', (event) => {
+          let x = event.clientX - (width / 2),
+              y = event.clientY - (height / 2);
 
-    // Shrink the navbar when page is scrolled
-    document.addEventListener('scroll', navbarShrink);
+          cards.forEach(card => {
+              light(card, x, y);
+              tilt(card, x, y);
+          });
+      });
+  }
 
-    // Activate Bootstrap scrollspy on the main nav element
-    const mainNav = document.body.querySelector('#mainNav');
-    if (mainNav) {
-        new bootstrap.ScrollSpy(document.body, {
-            target: '#mainNav',
-            rootMargin: '0px 0px -40%',
-        });
-    };
+  function light(card, x, y) {
+      let angle = (Math.atan2(y, x) * 180) / Math.PI - 90;
+      let gloss = card.querySelector('.card__gloss');
 
-    // Collapse responsive navbar when toggler is visible
-    const navbarToggler = document.body.querySelector('.navbar-toggler');
-    const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
-    );
-    responsiveNavItems.map(function (responsiveNavItem) {
-        responsiveNavItem.addEventListener('click', () => {
-            if (window.getComputedStyle(navbarToggler).display !== 'none') {
-                navbarToggler.click();
-            }
-        });
-    });
+      gloss.style.background = 'linear-gradient(' + angle + 'deg, rgba(255, 255, 255,' + y / height * .9 + ') 0%, rgba(255, 255, 255, 0) 80%)';
+  }
 
-});
+  function tilt(card, x, y) {
+      let force = 25,
+          rx = (x / width) * force,
+          ry = (y / height) * -force;
 
-function sendWhatsAppMessage() {
-    const name = document.getElementById('name').value;
-    const message = document.getElementById('message').value;
-    const phoneNumber = '62881080148114';
-    const text = `From: *${name}*
-${message}`;
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
-    window.open(url, '_blank');
-}
+      card.style.transform = 'rotateY(' + (rx) + 'deg) rotateX(' + (ry) + 'deg)';
+      // let content = card.querySelector('.card__content');
+      // content.style.transform = 'translateX(' + (rx * .75) + 'px) translateY(' + (ry * .75) + 'px)';
+  }
+
+  init();
+})();
