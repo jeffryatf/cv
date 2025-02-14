@@ -216,6 +216,7 @@ h1 {
     color: hsl(201, 76%, 87%);
     font-weight: 500;
     padding: 1rem;
+    text-align: center;
   }
 
 .certificate_box {
@@ -382,6 +383,19 @@ h1 {
     transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
+  @media screen and (max-width: 768px) {
+    .card {
+        width: 300px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 200px;
+        height: 120px;
+    }
+}
   .typer{
     position: absolute;
     top: 50px;
@@ -481,22 +495,22 @@ h1 {
     linear-gradient(to right, hsla(0, 100%, 99%, 0.1) 1px, transparent 1px),
     linear-gradient(to bottom, hsla(0, 100%, 99%, 0.1) 1px, transparent 1px);
     background-position: center;
-    background-size:70px 70px; 
+    background-size: 70px 70px; 
     z-index: 4;
     display: flex;
     flex-wrap: wrap;
-    min-width: 320px;
+    justify-content: center;
+    min-width: 300px;
     margin: 50px;
+}
 
-
-  }
-  .gallery {
+.gallery {
     width: 33.33%;
     overflow: hidden;
     position: relative;
-  }
-  
-  .gallery .content {
+}
+
+.gallery .content {
     z-index: 2;
     width: 100%;
     position: absolute;
@@ -509,68 +523,72 @@ h1 {
     box-sizing: border-box;
     min-height: 70px;
     background: hsla(0, 0%, 7%, 0.445);
-  }
-  
-  .gallery:hover .content {
+}
+
+.gallery:hover .content {
     opacity: 1;
-  }
-  
-  .gallery .image {
+}
+
+.gallery .image {
     z-index: 1;
     width: 100%;
     padding-bottom: 75%;
     position: relative;
     overflow: hidden;
-  }
-  
-  .gallery img {
+}
+
+.gallery img {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     transition: all 3s ease;
-  }
-  
-  .gallery:hover .content {
+}
+
+.gallery:hover .content {
     bottom: 0px;
     color: #fff;
-  }
-  
-  .gallery:hover .image img {
+}
+
+.gallery:hover .image img {
     transform: scale(1);
-  }
-  
-  .gallery .content span:first-child {
+}
+
+.gallery .content span:first-child {
     font-family: "Urbanist", serif;
     text-transform: uppercase;
     margin-bottom: 10px;
     font-weight: 900;
     color: #fff;
-    font-size: 21 px;
-  }
-  
-  .gallery .content span:last-child {
+    font-size: 21px;
+}
+
+.gallery .content span:last-child {
     font-family: "Urbanist", serif;
     font-size: 14px;
     font-weight: 200;
     color: #ffffff;
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     .gallery {
-      width: 50%;
+        width: 50%;
     }
     .gallery .content {
-      bottom: 0;
+        bottom: 0;
     }
-  }
-  
-  @media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 480px) {
+    .photo_gallery {
+        margin: 0;
+    }
     .gallery {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
+  
   @keyframes typingNew {
     0%, 24% { content: ""; }
     1%, 23% { content: "H"; }
