@@ -522,7 +522,7 @@ h1 {
     padding: 20px;
     box-sizing: border-box;
     min-height: 70px;
-    background: hsla(0, 0%, 7%, 0.445);
+    background: hsla(0, 0%, 7%, 0.7);
 }
 
 .gallery:hover .content {
