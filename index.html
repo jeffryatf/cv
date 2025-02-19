@@ -15,20 +15,20 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Lexend+Deca:wght@100..900&family=Oswald:wght@200..700&family=Teko:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <div class="hero_container">
+  <div class="hero-container">
     <div class="typer">
       <span class="typewriter thick"></span>
     </div>
-    <div class="marquee_top">
-      <div class="marquee__inner">
-        <p class="marquee__line">⋆ Jeffry Atur Firdaus </p>
-        <p class="marquee__line">⋆ Jeffry Atur Firdaus </p>
+    <div class="marquee-top">
+      <div class="marquee-inner">
+        <p class="marquee-line" id="top">⋆ Jeffry Atur Firdaus </p>
+        <p class="marquee-line" id="top">⋆ Jeffry Atur Firdaus </p>
       </div>
     </div>
-    <div class="marquee_bottom">
-      <div class="marquee__inner">
-        <p class="marquee__line">programming⋆arduino⋆PCB design⋆cybersecurity⋆linux server⋆creative⋆video editing⋆audio production⋆photography⋆</p>
-        <p class="marquee__line">programming⋆arduino⋆PCB design⋆cybersecurity⋆linux server⋆creative⋆video editing⋆audio production⋆photography⋆</p>
+    <div class="marquee-bottom">
+      <div class="marquee-inner">
+        <p class="marquee-line" id="bottom">programming⋆arduino⋆PCB design⋆cybersecurity⋆linux server⋆creative⋆video editing⋆audio production⋆photography⋆</p>
+        <p class="marquee-line" id="bottom">programming⋆arduino⋆PCB design⋆cybersecurity⋆linux server⋆creative⋆video editing⋆audio production⋆photography⋆</p>
       </div>
     </div>
   </div>
@@ -38,83 +38,90 @@
       Your browser does not support the video tag.
     </video>
     <div class="overlay"></div>
-    <h1 class="quote_title typewriterNew thick"></h1>
-    <p class="quote_text">Welcome to my personal site! <br> My name is Jeffry, and I thrive to create innovative solutions in the tech industries.</p>
+    <h1 class="quote-title typewriterNew thick"></h1>
+    <p class="quote-text">Welcome to my personal site! <br> My name is Jeffry, and I thrive to create innovative solutions in the tech industries.</p>
   </div>
   <div class="project">
     <h1>Featured Work</h1>
-    <div class="featured_project">
-      <a href="https://linkchatwa.com" class="project_card" style="background-image: url('/asset/project1.png');"></a>
-      <a href="https://jahelab.com" class="project_card" style="background-image: url('/asset/project2.png');"></a>
-      <a href="http://cekhub.com" class="project_card" style="background-image: url('/asset/project3.png');"></a>
+    <div class="featured-project">
+      <a class="project-card modalclick" style="background-image: url('/asset/project1.png');" 
+        data-title="LinkChatWa" data-description="LinkChatWa.com is a website that makes it easy to send WhatsApp and Telegram messages without the need to save phone numbers. <br>LinkChatWa uses PWA technology to simplify access to the website." 
+        data-image="/asset/project1display.jpg" data-button-text="Visit" data-button-visible="true" data-button-link="https://linkchatwa.com"></a>
+      <a class="project-card modalclick" style="background-image: url('/asset/project2.png');" 
+      data-title="Jahelab" data-description="Jahelab.com is currently under development. <br> Jahelab is an innovative product designed to assist you in realizing your digital ideas." 
+      data-image="/asset/project2display.jpg" data-button-text="Visit" data-button-visible="false" data-button-link="http://jahelab.com"></a>
+      <a class="project-card modalclick" style="background-image: url('/asset/project3.png');" 
+      data-title="CekHub" data-description="CheckHub.com is a catalog website that helps you check the details of various products available in the market." 
+      data-image="/asset/project3display.jpg" data-button-text="Visit" data-button-visible="true" data-button-link="https://cekhub.com"></a>
     </div>
   </div>
   </div>
   <div class="certificate">
-    <h1 class="quote__title">Skills & Achievements</h1>
+    <h1 class="quote-title">Skills & Achievements</h1>
     <div class="ag-format-container">
-      <div class="certificate_box">
-        <div class="certificate_item">
+      <div class="certificate-box">
+        <div class="certificate-item">
           <a href="https://1drv.ms/b/c/5d7631ede15eb778/EXi3XuHtMXYggF1QjwMAAAABS9GHd7PFjcygbBzrVBxzBQ?e=J2VeVf" 
-            target="_blank" class="certificate-item_link">
-            <div class="certificate-item_bg"></div>
-            <div class="certificate-item_title">Cisco Introduction to Internet of Things</div>
-            <div class="certificate-item_date-box">Cisco Networking Academy</div>
-            <div class="certificate-item_date">02 July 2024</div>
+            target="_blank" class="certificate-item-link">
+            <div class="certificate-item-bg"></div>
+            <div class="certificate-item-title">Cisco Introduction to Internet of Things</div>
+            <div class="certificate-item-date-box">Cisco Networking Academy</div>
+            <div class="certificate-item-date">02 July 2024</div>
           </a>
         </div>
-        <div class="certificate_item">
+        <div class="certificate-item">
           <a href="https://1drv.ms/i/c/5d7631ede15eb778/EXi3XuHtMXYggF1YjgMAAAABX8DQa2RyUkTCpLP2izgF_g?e=ggaoss"
-            target="_blank" class="certificate-item_link">
-            <div class="certificate-item_bg"></div>
-            <div class="certificate-item_title">Complete Web Development Bootcamp</div>
-            <div class="certificate-item_date-box">Dr. Angela Yu - Udemy</div>
-            <div class="certificate-item_date">21 March 2024</div>
+            target="_blank" class="certificate-item-link">
+            <div class="certificate-item-bg"></div>
+            <div class="certificate-item-title">Complete Web Development Bootcamp</div>
+            <div class="certificate-item-date-box">Dr. Angela Yu - Udemy</div>
+            <div class="certificate-item-date">21 March 2024</div>
           </a>
         </div>
-        <div class="certificate_item">
+        <div class="certificate-item">
           <a href="https://1drv.ms/b/c/5d7631ede15eb778/EXi3XuHtMXYggF30iwMAAAABC0h-RwNK_l4ERYRHIih5bQ?e=PRTJE4"
-            target="_blank" class="certificate-item_link">
-            <div class="certificate-item_bg"></div>
-            <div class="certificate-item_title">Learning Kali Linux</div>
-            <div class="certificate-item_date-box">LinkedIn Learning</div>
-            <div class="certificate-item_date">06 February 2023</div>
+            target="_blank" class="certificate-item-link">
+            <div class="certificate-item-bg"></div>
+            <div class="certificate-item-title">Learning Kali Linux</div>
+            <div class="certificate-item-date-box">LinkedIn Learning</div>
+            <div class="certificate-item-date">06 February 2023</div>
           </a>
         </div>
-        <div class="certificate_item">
+        <div class="certificate-item">
           <a href="https://1drv.ms/b/c/5d7631ede15eb778/EXi3XuHtMXYggF0RjwMAAAABY5ErwEE__qOEEzDPc_P8sw?e=8WP3Zg"
-            target="_blank" class="certificate-item_link">
-            <div class="certificate-item_bg"></div>
-            <div class="certificate-item_title">Security Testing Essential</div>
-            <div class="certificate-item_date-box">LinkedIn Learning</div>
-            <div class="certificate-item_date">27 January 2023</div>
+            target="_blank" class="certificate-item-link">
+            <div class="certificate-item-bg"></div>
+            <div class="certificate-item-title">Security Testing Essential</div>
+            <div class="certificate-item-date-box">LinkedIn Learning</div>
+            <div class="certificate-item-date">27 January 2023</div>
           </a>
         </div>
-        <div class="certificate_item">
+        <div class="certificate-item">
           <a href="https://1drv.ms/b/c/5d7631ede15eb778/EXi3XuHtMXYggF3tiwMAAAABZaFZ8yYL7tUvDJu4SFZJSQ?e=kkgFZF"
-            target="_blank" class="certificate-item_link">
-            <div class="certificate-item_bg"></div>
-            <div class="certificate-item_title">Cisco Cybersecurity Essential</div>
-            <div class="certificate-item_date-box">Cisco Networking Academy</div>
-            <div class="certificate-item_date">26 December 2022</div>
+            target="_blank" class="certificate-item-link">
+            <div class="certificate-item-bg"></div>
+            <div class="certificate-item-title">Cisco Cybersecurity Essential</div>
+            <div class="certificate-item-date-box">Cisco Networking Academy</div>
+            <div class="certificate-item-date">26 December 2022</div>
           </a>
         </div>
-        <div class="certificate_item">
+        <div class="certificate-item">
           <a href="https://1drv.ms/b/c/5d7631ede15eb778/EXi3XuHtMXYggF3kiwMAAAAB12dAow-Elb7lbiBd0E8x4w" target="_blank"
-            target="_blank" class="certificate-item_link">
-            <div class="certificate-item_bg"></div>
-            <div class="certificate-item_title">Data Analysis with Python</div>
-            <div class="certificate-item_date-box">FreeCodeCamp.org</div>
-            <div class="certificate-item_date">15 December 2022</div>
+            target="_blank" class="certificate-item-link">
+            <div class="certificate-item-bg"></div>
+            <div class="certificate-item-title">Data Analysis with Python</div>
+            <div class="certificate-item-date-box">FreeCodeCamp.org</div>
+            <div class="certificate-item-date">15 December 2022</div>
           </a>
         </div>
       </div>
     </div>
   </div>
-  <div class="photo_container">
+  <div class="photo-container">
   <h1 class="title">Hobbies & Passions</h1>
-  <div class="photo_gallery">
-    <a class="gallery">
+  <div class="photo-gallery">
+    <a class="gallery modalclick" 
+    data-title="Minecraft" data-description="I am hosting my Minecraft world on a server so that I can play the game with my friends.    " data-image="/asset/minecraftdisplay.jpeg" data-button-visible="false">
       <div class="content">
         <span class="title">Minecraft</span>
         <span class="category">Who doesn't love Minecraft?</span>
@@ -124,17 +131,19 @@
       </div>
     </a>
   
-    <a class="gallery">
+    <a class="gallery modalclick" 
+    data-title="Home Server" 
+    data-description="This is where I mostly learn about Linux, Bash, and Docker, along with exploring tools like CasaOS and Plex." data-image="/asset/homeserverdisplay.jpeg" data-button-visible="false">
       <div class="content">
         <span class="title">Home Server</span>
-        <span class="category">Local media server powered by Plex and CasaOS</span>
+        <span class="category">Local media server powered by CasaOS dan Plex</span>
       </div>
       <div class="image">
         <img src="/asset/homeserver.jpeg" alt="" />
       </div>
     </a>
   
-    <a class="gallery">
+    <a class="gallery modalclick" data-title="Music Production" data-description="I enjoy exploring music production using Digital Audio Workstations. Previously, I used FL Studio, and now I am learning to work with Ableton Live Lite. Feel free to visit my music projects at the link below." data-image="/asset/daw.png" data-button-visible="true" data-button-text="Visit" data-button-link="https://www.youtube.com/watch?v=oe5bBQmCMW0&ab_channel=MASK29">
       <div class="content">
         <span class="title">Music Production</span>
         <span class="category">Digital music Production using computer DAW</span>
@@ -144,7 +153,7 @@
       </div>
     </a>
   
-    <a class="gallery">
+    <a class="gallery modalclick" data-title="Cooking" data-description="Cooking allows me to experiment with different flavors and techniques. There is something incredibly rewarding about preparing meals that require minimal ingredients but deliver maximum flavor. " data-image="/asset/cooking.jpeg">
       <div class="content">
         <span class="title">Cooking</span>
         <span class="category">Process of making yummy food</span>
@@ -154,7 +163,7 @@
       </div>
     </a>
   
-    <a class="gallery">
+    <a class="gallery modalclick" data-title="Photography" data-description="I enjoy taking pictures to capture moments. Unfortunately, my camera is broken, so I am using my smartphone as my primary camera." data-image="/asset/photography.jpeg">
       <div class="content">
         <span class="title">Photography</span>
         <span class="category">Capturing moment into digital memories</span>
@@ -164,7 +173,8 @@
       </div>
     </a>
   
-    <a class="gallery">
+    <a class="gallery modalclick" 
+    data-title="GYM" data-description="I am actively working out at home, utilizing equipment such as barbell and dumbbells. My workouts include exercises such as arm curls, push-ups, squats, calf raises, and barbell rows." data-image="/asset/gym.jpeg">
       <div class="content">
         <span class="title">GYM</span>
         <span class="category">I actively working out at home</span>
@@ -182,11 +192,11 @@
 <div style="height: 5vh; background: hsl(201, 76%, 25%);"></div>
 <div style="height: 5vh; background: hsl(201, 76%, 30%);"></div>
 <div class="footer">
-  <div class="footer_card">
+  <div class="footer-card">
     <h1>Get in touch!</h1>
-    <a href="https://wa.me/62881080148114" class="card" style="background-image: url('/asset/card.png');">
-      <div class="card__content"></div>
-      <div class="card__gloss"></div>
+    <a  class="card" style="background-image: url('/asset/card.png');">
+      <div class="card-content"></div>
+      <div class="card-gloss"></div>
     </a>
   </div>
   <div class="copyright">
@@ -199,6 +209,17 @@
 <div style="height: 5vh; background: hsl(201, 76%, 15%);"></div>
 <div style="height: 5vh; background: hsl(201, 76%, 10%);"></div>
 <div style="height: 30vh; background: hsl(201, 76%, 5%); background-image: url('/asset/rockbottom.png'); background-position: bottom center; background-size: 20vh; background-repeat: no-repeat;"></div>
+
+<!-- Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1></h1>
+    <img src="" alt="" style="width: 100%;">
+    <p></p>
+    <button class="modal-button"></button>
+  </div>
+</div>
 
   <script src="js/scripts.js"></script>
 </body>
