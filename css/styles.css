@@ -38,7 +38,7 @@ p{
     box-sizing: border-box;
 }
 .hero-container{
-  
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -774,4 +774,40 @@ p{
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: 7vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.social-icons a {
+  margin: 0 15px;
+  font-size: 24px;
+  color: hsl(202, 76%, 7%);
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: hsl(201, 76%, 65%);
+}
+
+.footer-social-icons {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.footer-social-icons a {
+  margin: 0 10px;
+  font-size: 18px;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer-social-icons a:hover {
+  color: hsl(201, 76%, 65%);
 }
