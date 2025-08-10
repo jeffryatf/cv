@@ -38,7 +38,7 @@ p{
     box-sizing: border-box;
 }
 .hero-container{
-    position: relative;
+  position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
